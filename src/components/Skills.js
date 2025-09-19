@@ -3,11 +3,11 @@ import "../styles/skills.css";
 
 const skills = {
   "Programming Languages": ["C", "C++", "Python"],
-  "Frontend Development": ["JavaScript", "React"],
-  "Backend Development": ["Node.js", "Express"],
-  Databases: ["MongoDB", "MySQL", "PostgreSQL"],
-  "Tools & Platforms": ["Git", "GitHub", "Postman"],
-  Deployment: ["Netlify", "Vercel", "Render"],
+  "Frontend Development": ["HTML","CSS","JavaScript","React.js","Bootstrap"],
+  "Backend Development": ["Node.js", "Express","Django","Flask","BCrypt","Auth",'JWT'],
+  "Databases": ["MongoDB", "MySQL", "PostgreSQL"],
+  "Tools & Platforms": ["VsCode","PyCharm","Vite","Git","GitHub","Postman"],
+  "Deployment": ["Netlify", "Vercel", "Render","Docker"],
 };
 
 export default function Skills() {

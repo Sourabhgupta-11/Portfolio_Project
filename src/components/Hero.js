@@ -14,7 +14,7 @@ export default function Hero() {
           Hi, I'm <span style={{ color: "var(--accent)" }}>Sourabh Gupta</span>
         </h1>
         <p className="lead mt-3" style={{ color: "var(--muted)" }}>
-          Aspiring CSE Engineer • Problem Solver • Web Developer
+          Aspiring CSE Engineer • Problem Solver • Full Stack Developer
         </p>
         <div className="mt-4">
           <a href="#projects" className="btn btn-primary btn-lg me-2">View Projects</a>

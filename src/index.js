@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import './index.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
+
 const root = createRoot(document.getElementById('root'));
 root.render(<App />);
 
