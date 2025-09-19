@@ -1,0 +1,37 @@
+#hero {
+  background: var(--bg1);
+  color: var(--text);
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+  text-align: center;
+}
+
+
+#hero .btn-get-in-touch {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+  background-color: transparent;
+  color: #333333;                  
+  border: 2px solid #333333;       
+}
+
+
+#hero .btn-get-in-touch:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+
+
+
+[data-theme="dark"] #hero .btn-get-in-touch {
+  background-color: transparent;
+  color: #fff;                 
+  border: 2px solid #fff;      
+}
