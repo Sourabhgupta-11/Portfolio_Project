@@ -23,15 +23,15 @@ export default function Contact() {
 
     emailjs
       .send(
-        "service_nnxxsbe",     // replace with EmailJS service ID
-        "template_35a9yic",    // replace with EmailJS template ID
+        "service_nnxxsbe",    
+        "template_35a9yic",   
         {
           from_name: formData.name,
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
         },
-        "_aj_IIPNHZyhxpUjJ"      // replace with EmailJS public key
+        "_aj_IIPNHZyhxpUjJ"      
       )
       .then(
         (response) => {
@@ -54,6 +54,7 @@ export default function Contact() {
   <h2 className="section-title">Contact Me</h2>
   <span className="section-subtitle">Let’s connect & collaborate</span>
 </div>
+
 
 
         {/* Contact Info */}

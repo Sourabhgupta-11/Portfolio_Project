@@ -9,6 +9,31 @@ import Footer from './components/Footer.js';
 import AOS from 'aos';
 
 function App() {
+  useEffect(() => {
+    const navbar = document.querySelector('.navbar-custom');
+    const navbarHeight = navbar ? navbar.offsetHeight : 0;
+
+    // Smooth scroll for internal anchors
+    const anchors = document.querySelectorAll('a[href^="#"]');
+    anchors.forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const top = target.offsetTop - navbarHeight; // offset for sticky navbar
+          window.scrollTo({
+            top,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    return () => {
+      // Clean up
+      anchors.forEach(anchor => anchor.removeEventListener('click', () => {}));
+    };
+  }, []);
   const [theme, setTheme] = useState(
     () => localStorage.getItem('theme') || 'light'
   );

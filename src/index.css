@@ -36,6 +36,8 @@ body {
   background: var(--bg1);
 }
 
+/*-----------------------------SECTION HEADING CSS----------------------------------*/
+
 .section-title-wrapper {
   text-align: center;
 }
@@ -79,9 +81,49 @@ body {
   color: #cccccc;
 }
 
-@media (max-width: 768px){
-  body {
-    padding-top: 64px;
+#hero, #about, #projects, #skills, #contact, #footer {
+  scroll-margin-top: 80px; 
+}
+
+
+/*-----------------------------NAVBAR CSS----------------------------------*/
+.navbar-custom {
+  background: var(--navbar-bg);
+  padding: 0.8rem 2rem;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid transparent;
+}
+
+body:not([data-theme="dark"]) .navbar-custom {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .navbar-custom {
+  background: rgba(32, 35, 42, 0.95);
+  border-bottom: 2px solid var(--accent);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .navbar-custom .nav-link,
+[data-theme="dark"] .navbar-custom .navbar-brand {
+  color: #e1e1e6;
+  transition: color 0.3s ease;
+}
+
+[data-theme="dark"] .navbar-custom .nav-link:hover {
+  color: var(--accent);
+}
+
+[data-theme="dark"] .navbar-custom {
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 768px) {
+  #hero, #about, #projects, #skills, #contact, #footer {
+    scroll-margin-top: 70px; /* slightly smaller for mobile */
   }
 }
 
