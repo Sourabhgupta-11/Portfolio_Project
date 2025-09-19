@@ -1,0 +1,16 @@
+#contact {
+  background: var(--bg1);
+  color: var(--text);
+  padding: 60px 0;
+}
+
+
+[data-theme="dark"] .btn-outline-dark {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+[data-theme="dark"] .btn-outline-dark:hover {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}

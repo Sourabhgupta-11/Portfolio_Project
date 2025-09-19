@@ -18,6 +18,7 @@
   --muted: #adb5bd;
 }
 
+
 .text-muted {
   color: #6c757d !important;
 }
@@ -31,7 +32,7 @@ body {
   scroll-behavior: smooth;
   color: var(--text);
   margin: 0;
-  padding-top: 72px;
+  padding-top: 0;
   background: var(--bg1);
 }
 
@@ -76,10 +77,6 @@ body {
 
 [data-theme="dark"] .section-subtitle {
   color: #cccccc;
-}
-
-.navbar-custom {
-  background: var(--navbar-bg) !important;
 }
 
 @media (max-width: 768px){
