@@ -1,0 +1,34 @@
+#about {
+  background: var(--bg2);
+  color: var(--text);
+  padding: 70px 0;
+}
+
+/* Info cards (Education & Experience) */
+.info-card {
+  background: rgba(255, 255, 255, 0.05); /* subtle effect */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 18px 22px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="dark"] .info-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-card h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#about .lead {
+  font-size: 1.1rem;
+  line-height: 1.65;
+}

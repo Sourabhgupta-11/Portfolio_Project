@@ -18,16 +18,13 @@
   --muted: #adb5bd;
 }
 
-
 .text-muted {
   color: #6c757d !important;
 }
 
-
 [data-theme="dark"] .text-muted {
   color: #d1d4d6c4 !important;
 }
-
 
 body {
   font-family: 'Segoe UI', Roboto, "Helvetica Neue", Arial;
@@ -50,7 +47,6 @@ body {
   cursor: default;
   transition: color 0.3s ease;
 }
-
 
 .section-title::after {
   content: "";
@@ -81,8 +77,6 @@ body {
 [data-theme="dark"] .section-subtitle {
   color: #cccccc;
 }
-
-
 
 .navbar-custom {
   background: var(--navbar-bg) !important;
