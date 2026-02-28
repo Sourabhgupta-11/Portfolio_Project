@@ -2,12 +2,12 @@ import React from "react";
 import "../styles/skills.css";
 
 const skills = {
-  "Programming Languages": ["C", "C++", "Python"],
+  "Programming Languages": ["C", "C++", "Python","Rust"],
   "Frontend Development": ["HTML","CSS","JavaScript","React.js","Bootstrap"],
   "Backend Development": ["Node.js", "Express","Django","Flask","BCrypt","Auth",'JWT'],
   "Databases": ["MongoDB", "MySQL", "PostgreSQL"],
-  "Tools & Platforms": ["VsCode","PyCharm","Vite","Git","GitHub","Postman"],
-  "Deployment": ["Netlify", "Vercel", "Render","Docker"],
+  "Blockchain Development": ["Solidity", "Hardhat", "ethers.js", "IPFS", "NFTs", "Geth", "Full-stack Web3"],
+  "Tools & Deployment": ["Git/GitHub", "Docker", "Postman", "VS Code", "PyCharm", "Netlify", "Vercel", "Render"],
 };
 
 export default function Skills() {

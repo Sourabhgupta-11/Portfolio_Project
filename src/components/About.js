@@ -14,15 +14,18 @@ export default function About() {
 
         <div className="col-md-10 mx-auto">
           <p className="lead">
-            I am an <strong>aspiring Computer Science and Engineering student</strong> with a strong passion
-            for <strong>problem-solving</strong> and <strong>emerging technologies</strong>.  
-            Currently pursuing B.Tech in CSE at Guru Gobind Singh Indraprastha University, New Delhi.
-          </p>
-          <p>
-            I enjoy building <strong>web applications (MERN)</strong>, learning algorithms & data structures,
-            and participating in hackathons. I focus on writing clean, maintainable code and building
-            user-friendly interfaces.
-          </p>
+  I am a <strong>Computer Science and Engineering student</strong> at 
+  Guru Gobind Singh Indraprastha University, New Delhi, 
+  with a strong foundation in <strong>full-stack development </strong> 
+   and <strong>blockchain technologies</strong>.
+</p>
+
+<p>
+  I specialize in building scalable web applications using the MERN stack 
+  and developing decentralized applications with Solidity and Ethereum. 
+  I enjoy solving complex problems, optimizing system performance, 
+  and creating clean, user-focused digital experiences.
+</p>
 
           {/* Education */}
           <div className="info-card mt-4">
@@ -30,7 +33,7 @@ export default function About() {
             <ul className="list-unstyled mt-2">
               <li>
                 <strong>B.Tech (CSE)</strong> — Guru Gobind Singh Indraprastha University (2023 - 2027)  
-                <span className="text-muted"> • CGPA: 8.74</span>
+                <span className="text-muted"> • CGPA: 8.75</span>
               </li>
               <li>
                 <strong>Senior Secondary</strong> — D.A.V Public School  
@@ -40,13 +43,22 @@ export default function About() {
           </div>
 
           {/* Experience */}
-          <div className="info-card mt-4">
-            <h5><FaBriefcase className="me-2" /> Experience</h5>
-            <p className="mb-0">
-              Participant in <strong>Hackathon CODE4CAUSE 2.0 (NSUT)</strong> — built an AI-powered
-              "Lost and Found" platform integrated with blockchain (Aptos).
-            </p>
-          </div>
+<div className="info-card mt-4">
+  <h5><FaBriefcase className="me-2" /> Experience</h5>
+
+  <p>
+    <strong>Frontend Development Virtual Intern | AICTE – EduNet Foundation (IBM)</strong>  
+    <br />
+    <small>Aug 2025 – Sep 2025</small><br />
+    Worked on responsive UI development using HTML, CSS, JavaScript, and React.js. 
+    Applied component-based architecture, Git version control, and UI debugging best practices.
+  </p>
+
+  <p className="mb-0">
+    Participant in <strong>Hackathon CODE4CAUSE 2.0 (NSUT)</strong> — built an AI-powered 
+    “Lost & Found” platform integrated with the Aptos blockchain.
+  </p>
+</div>
         </div>
       </div>
     </section>

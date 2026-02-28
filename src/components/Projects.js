@@ -5,21 +5,23 @@ import "../styles/projects.css";
 const projects = [
   {
     id: 'p1',
-    title: 'Amazon Clone',
-    tech: 'HTML, CSS, JavaScript',
-    short: 'Responsive e-commerce UI replicating Amazon homepage with product grid and interactions.',
-    details: 'Built a fully responsive e-commerce homepage replicating Amazon’s UI. Implemented interactive features like navigation, product listings, and hover effects for enhanced user experience across devices.',
-    github: '/',
-    demo: '/'
+    title: 'Decentralized Drive',
+    tech: 'Solidity, React.js, Ethereum (Sepolia), IPFS, MetaMask',
+short: 'Web3 decentralized file-sharing platform with smart contracts and IPFS storage.',
+
+details: 'Engineered a blockchain-based file-sharing application using Solidity smart contracts on Ethereum Sepolia and IPFS for decentralized storage. Integrated a React.js frontend with MetaMask authentication to enable secure file uploads and controlled access.',
+    github: 'https://github.com/Sourabhgupta-11/Decentralized-google-drive',
+    demo: 'https://decentralized-google-drive-seven.vercel.app/'
   },
   {
     id: 'p2',
-    title: 'News App',
-    tech: 'React, News API',
-    short: 'Real-time news dashboard with filters, infinite scroll and loading states.',
-    details: 'Created a dynamic news dashboard in React that fetches real-time news articles. Integrated category-based filtering, infinite scroll/pagination, and loading spinners.',
-    github: 'https://github.com/Sourabhgupta-11/NewsApp',
-    demo: '/'
+    title: 'Blockchain To-Do Application',
+    tech: 'Solidity, Node.js, Express.js, React.js, Ethereum (Sepolia)',
+short: 'Decentralized task management app with on-chain storage and REST API integration.',
+
+details: 'Built a blockchain-based To-Do application using Solidity smart contracts on Ethereum Sepolia for on-chain task storage. Integrated a Node.js/Express REST API and React.js frontend to enable efficient task retrieval and full CRUD functionality.',
+    github: 'https://github.com/Sourabhgupta-11/Todo_BERN_App',
+    demo: 'https://todo-bern-app.vercel.app/'
   },
   {
     id: 'p3',
