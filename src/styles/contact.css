@@ -25,3 +25,23 @@
   background-color: #ffffff !important;
   color: #000000 !important;
 }
+
+/* 🌙 DARK MODE INPUT FIX */
+[data-theme="dark"] .contact-form .form-control {
+  background-color: #1e1e1e;   /* dark input */
+  color: #ffffff;              /* white text */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Placeholder color */
+[data-theme="dark"] .contact-form .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Focus state */
+[data-theme="dark"] .contact-form .form-control:focus {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.15rem rgba(0, 123, 255, 0.25);
+}

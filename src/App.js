@@ -29,6 +29,7 @@ function App() {
         }
       });
     });
+    
 
     return () => {
       // Clean up
@@ -48,6 +49,10 @@ function App() {
     localStorage.setItem('theme', theme);
   }, [theme]);
 
+  useEffect(() => {
+  document.body.className = theme; // 'light' or 'dark'
+}, [theme]);
+
   const toggleTheme = () => setTheme(t => (t === 'dark' ? 'light' : 'dark'));
 
   return (
@@ -55,11 +60,27 @@ function App() {
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <main>
         <Hero />
-        <About />
-        <Projects />
-        <Certificates />
-        <Skills />
-        <Contact />
+
+<div className="divider-main"></div>
+
+<About />
+
+<div className="divider-main"></div>
+
+<Projects />
+
+{/* 🔥 SPECIAL DIVIDER */}
+<div className="divider-highlight"></div>
+
+<Certificates theme={theme} />
+
+<div className="divider-main"></div>
+
+<Skills />
+
+<div className="divider-main"></div>
+
+<Contact />
       </main>
       <Footer />
     </>

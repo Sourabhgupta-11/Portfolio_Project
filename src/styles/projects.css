@@ -8,15 +8,16 @@
 
 
 .card {
-  background: var(--bg1);                    
-  border: 2px solid rgba(255, 255, 255, 0.288);
-  color: var(--text);                        
-  transition: transform 0.2s ease;
+  background: var(--bg1);
+  border: 1px solid rgba(0, 0, 0, 0.1);   /* ✅ visible in light mode */
+  color: var(--text);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 
 .project-card:hover {
   transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -27,11 +28,12 @@
 
 
 [data-theme="dark"]{
-    #projects .card {
-    background: var(--bg1);                    
-    color: #fff;                               
-    border: 2px solid rgba(255, 255, 255, 0.733);
-    }
+
+   #projects .card {
+  background: var(--bg1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);  /* softer + clean */
+}
 
    
     #projects .btn-outline-dark {

@@ -36,7 +36,7 @@ const certificates = [
   }
 ];
 
-const Certificates = () => {
+const Certificates = ({theme}) => {
   return (
     <div className="container my-5">
 
@@ -48,7 +48,9 @@ const Certificates = () => {
       <div className="row mb-5">
         {achievements.map((item, index) => (
           <div className="col-md-6 mb-4" key={index}>
-            <div className="card border-success shadow h-100">
+            <div className={`card shadow h-100 ${
+  theme === "dark" ? "bg-dark text-light border-light" : "border-success"
+}`}>
               <div className="card-body">
 
                 <span className="badge bg-warning text-dark mb-2 me-2">
@@ -60,10 +62,10 @@ const Certificates = () => {
                 </span>
 
                 <h5 className="card-title mt-2">{item.title}</h5>
-                <h6 className="text-muted">{item.issuer}</h6>
+                <h6 className={theme === "dark" ? "text-light opacity-75" : "text-muted"}>{item.issuer}</h6>
                 <p>{item.description}</p>
 
-                <div className="d-flex gap-2 mt-3">
+                <div className="d-flex gap-2 mt-auto">
 
                   <a
                     href={item.file}
@@ -101,20 +103,24 @@ const Certificates = () => {
       <div className="row">
         {certificates.map((cert, index) => (
           <div className="col-md-6 mb-4" key={index}>
-            <div className="card shadow h-100">
-              <div className="card-body">
+            <div className={`card shadow h-100 ${
+  theme === "dark" ? "bg-dark text-light border-light" : ""
+}`}>
+              <div className="card-body d-flex flex-column">
                 <h5 className="card-title">{cert.title}</h5>
-                <h6 className="text-muted">{cert.issuer}</h6>
+                <h6 className={theme === "dark" ? "text-light opacity-75" : "text-muted"}>{cert.issuer}</h6>
                 <p>{cert.description}</p>
 
-                <a
-                  href={cert.file}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary"
-                >
-                  View Certificate
-                </a>
+                <div className="mt-auto">
+  <a
+    href={cert.file}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn btn-primary"
+  >
+    View Certificate
+  </a>
+</div>
               </div>
             </div>
           </div>
