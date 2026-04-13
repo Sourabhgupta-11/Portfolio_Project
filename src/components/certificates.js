@@ -5,16 +5,17 @@ const achievements = [
     title: "HackIndia Spark 4 Hackathon",
     issuer: "KCC College - East NCR Growth Region",
     description:
-      "Reached Final Round (Top 25 out of 138 teams). Developed a FactCheck Bot to identify and verify misinformation.",
+      "Reached Final Round (Top 25 out of 138 teams). Developed a FactCheck Bot to identify and verify misinformation, including both a browser extension and a web-based platform.",
     file: "/certificates/hackathon-certificate.pdf",
-    badge: "Top 25"
+    badge: "Top 25",
+    github: "https://github.com/Sourabhgupta-11/jeetenge"
   }
 ];
 
 const certificates = [
   {
     title: "Frontend Virtual Internship",
-    issuer: "Company Name",
+    issuer: "Edunet Foundation",
     description:
       "Worked on frontend development using React and modern UI practices.",
     file: "/certificates/frontend-internship.pdf"
@@ -23,7 +24,7 @@ const certificates = [
     title: "Python Course",
     issuer: "Tutedude",
     description:
-      "Completed Python course covering fundamentals, OOP, and problem-solving.",
+      "Completed Python course covering core programming, OOP, OpenCV, automation, networking, and backend development using Django and Flask, along with strong problem-solving skills.",
     file: "/certificates/python-certificate.pdf"
   },
   {
@@ -62,14 +63,30 @@ const Certificates = () => {
                 <h6 className="text-muted">{item.issuer}</h6>
                 <p>{item.description}</p>
 
-                <a
-                  href={item.file}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-success"
-                >
-                  View Proof
-                </a>
+                <div className="d-flex gap-2 mt-3">
+
+                  <a
+                    href={item.file}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-success"
+                  >
+                    View Proof
+                  </a>
+
+                  {item.github && (
+                    <a
+                      href={item.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-dark"
+                    >
+                      <i className="bi bi-github"></i> GitHub
+                    </a>
+                  )}
+
+                </div>
+
               </div>
             </div>
           </div>
