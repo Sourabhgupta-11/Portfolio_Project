@@ -22,7 +22,7 @@ export default function Navbar({ theme, toggleTheme }) {
               </button>
             </li>
             <li className="nav-item ms-2">
-              <a className="btn btn-primary btn-sm" href="my_resume (2).pdf" target="_blank" rel="noreferrer">Resume</a>
+              <a className="btn btn-primary btn-sm" href="MyResume (2).pdf" target="_blank" rel="noreferrer">Resume</a>
             </li>
           </ul>
         </div>

@@ -7,6 +7,7 @@ import Skills from './components/Skills.js';
 import Contact from './components/Contact.js';
 import Footer from './components/Footer.js';
 import AOS from 'aos';
+import Certificates from './components/certificates.js';
 
 function App() {
   useEffect(() => {
@@ -56,6 +57,7 @@ function App() {
         <Hero />
         <About />
         <Projects />
+        <Certificates />
         <Skills />
         <Contact />
       </main>
